@@ -1,0 +1,7 @@
+#gameCanvas {
+    border: 2px solid black; /* Black border around the game */
+    background-color: #070809; /* Light gray background for the game */
+    width: 200px; /* Max width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 0
+}
