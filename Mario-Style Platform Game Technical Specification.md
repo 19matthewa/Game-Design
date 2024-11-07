@@ -77,7 +77,7 @@
 * Double buffering using requestAnimationFrame for smooth animation  
 * Layer-based rendering order:  
   * Background/Terrain  
-  * Platforms/Pipes  
+  * Level Elements  
   * Interactive elements (coins, blocks)  
   * Enemies  
   * Player  
@@ -99,7 +99,7 @@ The `player` object represents the player character in a game. It has the follow
 8. `state`: The player's current state, such as "small" or another power-up state. Different states can be added to change the player's abilities, appearance, or behavior.  
 9. `health`: The player's current health or number of lives. This can be decreased when the player takes damage and increased when the player collects health items.  
 10. `coins`: The number of coins the player has collected. This can be incremented when the player picks up coins.  
-11. `fireFlower`: A boolean indicating whether the player has a fire flower power-up. This and other power-ups can be added to give the player new abilities.  
+11. `fireFlower`: A boolean indicating whether the player has a fire flower power-up. Example for other power-ups that can be added to give the player new abilities.  
 12. `lastDirection`: An integer representing the player's last movement direction (1 for right, \-1 for left). This can be used to determine which way the player is facing.  
 13. `invincible`: A boolean indicating whether the player is currently invincible. This can be used to temporarily protect the player from damage.  
 14. `invincibilityTimer`: The time remaining in the player's current invincibility period. This can be used to track and manage the player's invincibility.  
@@ -109,12 +109,7 @@ To add new qualities to the player, you can simply add new properties to the `pl
 
 ## **Fireball**
 
-The Fireball class represents a projectile fired by the player character, typically when the player has acquired a power-up (such as a fire flower). The fireball travels in the direction the player is facing, and it has basic collision detection capabilities to interact with other objects in the game world. The class includes methods for updating its position, rendering it on the screen, and checking for collisions with other entities.
-
-## **Enemy Types**
-
-* Goomba: Implements basic walking enemy behavior, can be defeated by jumping on top  
-* Koopa Troopa: Implements complex state machine with walking, shell, and moving shell states
+Example: The Fireball class represents a projectile fired by the player character, typically when the player has acquired a power-up (such as a fire flower). The fireball travels in the direction the player is facing, and it has basic collision detection capabilities to interact with other objects in the game world. The class includes methods for updating its position, rendering it on the screen, and checking for collisions with other entities.
 
 ### **Level Elements (Cyberpunk Naruto Theme)**
 
@@ -330,12 +325,10 @@ function displayGameOver() {
 
 
    for (let i \= 0; i \< text.length; i\++) {
+    
+    const x \= startX \+ (i \* letterSpacing);
 
-       const x \= startX \+ (i \* letterSpacing);
-
-      
-
-       // Draw 3D shadow layers
+    // Draw 3D shadow layers
 
        for (let layer \= layers; layer \> 0; layer\--) {
 
