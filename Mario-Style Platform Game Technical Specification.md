@@ -1,6 +1,6 @@
 # **Mario-Style Platform Game Technical Specification**
 
-## **1\. Technology Stack**
+## **Technology Stack**
 
 ### **Core Technologies**
 
@@ -15,7 +15,7 @@
 * Pure vanilla JavaScript implementation  
 * Browser-native Canvas API for rendering
 
-## **2\. Architecture**
+## **Architecture**
 
 ### **Core Components**
 
@@ -42,7 +42,7 @@
 * Each entity is represented as an object with properties for position, size, visual representation (sprites), and logic for updating and rendering its state  
 * The system is designed to be flexible, allowing for efficient handling of entity animations and behaviors
 
-## **3\. Technical Specifications**
+## **Technical Specifications**
 
 ### **A. Core Game Systems**
 
@@ -227,17 +227,7 @@ The Fireball class represents a projectile fired by the player character, typica
    * Description: The ultimate power-up, Susanoo envelops the player in an invincible chakra form, making them unstoppable for a brief period. During this time, enemies are destroyed on contact.  
    * Visual: The player is surrounded by a massive, glowing Susanoo figure, resembling a cybernetic chakra warrior. The figure is semi-transparent, with bright blue energy radiating from it, and destroys enemies on contact.
 
-## **4\. Power-ups**
-
-* Plain Armor  
-* Voltage Cloak  
-* Chakra Blade  
-* Lightning Bow  
-* Shock Kunai  
-* Rocket Booster  
-* Susanoo
-
-## **5\. Security Considerations**
+## **Security Considerations**
 
 ### **Client-Side Security**
 
@@ -252,7 +242,7 @@ The Fireball class represents a projectile fired by the player character, typica
 * Canvas API compatibility  
 * Performance optimization for different browsers
 
-## **6\. Future Enhancements**
+## **Future Enhancements**
 
 ### **Planned Features**
 
@@ -269,7 +259,7 @@ The Fireball class represents a projectile fired by the player character, typica
 * Improved collision detection  
 * Save state functionality
 
-## **7\. Development Guidelines**
+## **Development Guidelines**
 
 ### **Code Organization**
 
