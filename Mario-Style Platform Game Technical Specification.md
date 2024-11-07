@@ -1,5 +1,10 @@
 # **Mario-Style Platform Game Technical Specification**
 
+**Suggestions Received**
+* removed data terminal with hacking puzzle
+* removed thwomp / CrushBot becasue without animations it would be unfair to character
+* edited visuals for enemies to eliminate animations other than movement
+
 ## **Technology Stack**
 
 ### **Core Technologies**
@@ -121,26 +126,23 @@ The Fireball class represents a projectile fired by the player character, typica
    * Looks: Transparent force fields with blue or red electric currents running through them, sparking on the edges.  
 3. **Magnetic Rails**  
    * Function: Player can attach to these rails, sliding along them or jumping between rails to progress through the level.  
-   * Looks: Glowing, blue-tinted magnetic strips embedded in walls or ceilings, with energy pulsating along the rail's length.  
-4. **Data Terminals**  
-   * Function: Interactable objects where the player can unlock doors, activate platforms, or disable traps by hacking them.  
-   * Looks: Futuristic computer consoles with holographic screens, glowing in green or blue, with lines of code scrolling across.  
+   * Looks: Glowing, blue-tinted magnetic strips embedded in walls or ceilings, with energy pulsating along the rail's length.   
 5. **Electric Lifts**  
    * Function: Vertical platforms that the player can ride to different parts of the level. Can be slow or fast-moving, and some are activated by switches.  
    * Looks: Sleek metal platforms with glowing power cores beneath them, with visible electrical sparks running up and down the support poles.  
-6. **Neon Sign Hazards**  
+5. **Neon Sign Hazards**  
    * Function: These neon signs are obstacles that flash erratically, creating damage zones the player must avoid.  
    * Looks: Bright, glitchy holographic signs advertising products or ninja clans, with parts that flicker and spark with electricity when malfunctioning.  
-7. **Energy Shields**  
+6. **Energy Shields**  
    * Function: Shields protect certain areas or enemies. Players need to deactivate these shields by solving puzzles or hacking terminals.  
    * Looks: Transparent, shimmering force fields with a hexagonal pattern, emitting a low hum and glowing in bright colors like cyan or pink.  
-8. **Chakra-Infused Jumps Pads**  
+7. **Chakra-Infused Jumps Pads**  
    * Function: Propels the player high into the air to access otherwise unreachable areas.  
    * Looks: High-tech pads with glowing chakra symbols that flare up with energy when stepped on, creating a ripple of blue or purple light.  
-9. **Electric Traps**  
+8. **Electric Traps**  
    * Function: These traps release bursts of electricity when the player steps near them, requiring timing to pass without taking damage.  
    * Looks: Metal floor or wall-mounted devices with exposed wiring and electric arcs, with warning lights flashing before activating.  
-10. **Checkpoint Pylons**  
+9. **Checkpoint Pylons**  
     * Function: When activated, serves as a respawn point for the player. Can restore some health or energy.  
     * Looks: Tall, sleek pylons with glowing chakra symbols that rotate around the top. When activated, they pulse with a bright light, syncing the player's chakra.
 
@@ -150,7 +152,7 @@ The Fireball class represents a projectile fired by the player character, typica
    * Mario Bros Equivalent: Goomba  
    * Behavior: Walks forward, turning when hitting an obstacle. Can be defeated with a jump or certain power-ups.  
    * Player Interaction: Player can jump on the enemy to destroy it, causing a small electric burst. Contact damages the player.  
-   * Looks: Small, humanoid robots with glowing red eyes and armored legs. Their exoskeletons have worn-down metal plates and neon circuits.  
+   * Looks: Small, humanoid robots with bright red eyes and armored legs. Their exoskeletons have worn-down metal plates and neon circuits.  
 2. **Mecha-Troopa**  
    * Mario Bros Equivalent: Koopa Troopa  
    * Behavior: Walks forward and retracts into a core mode when stomped, becoming a projectile the player can kick.  
@@ -160,37 +162,32 @@ The Fireball class represents a projectile fired by the player character, typica
    * Mario Bros Equivalent: Hammer Bro  
    * Behavior: Throws electric shurikens at the player from platforms while jumping between positions.  
    * Player Interaction: The player can jump on or attack them with projectiles to defeat them, but must avoid the thrown shurikens.  
-   * Looks: Futuristic ninja with high-tech body armor and a glowing visor, throwing blue, crackling shurikens charged with electricity.  
+   * Looks: Futuristic ninja with high-tech body armor and a glowing visor, throwing blue-lined, shurikens charged with electricity.  
 4. **Data-Spike Plant**  
    * Mario Bros Equivalent: Piranha Plant  
    * Behavior: Pops out of data terminals to attack, spitting electric spikes in short bursts.  
    * Player Interaction: The player must avoid the spikes and can defeat it with a projectile attack when it's exposed.  
-   * Looks: A mechanical plant with metal petals and data cables for vines. Its "spikes" are glowing digital data packets, sparking with energy.  
+   * Looks: A mechanical plant with metal petals and data cables for vines. Its "spikes" are bright digital data packets.  
 5. **Ghost Protocol**  
    * Mario Bros Equivalent: Boo  
    * Behavior: Approaches the player when they aren't looking, stopping when they face it.  
    * Player Interaction: The player must avoid turning their back to it, as it only moves when unseen.  
-   * Looks: A glitchy, transparent holographic face with neon lines. The body flickers in and out of view, with static patterns rippling through it.  
+   * Looks: A glitchy, transparent holographic face with neon lines. The body flickers in and out of view, with on-off patterns.  
 6. **Pulse Drone**  
    * Mario Bros Equivalent: Bullet Bill  
    * Behavior: Flies straight at the player from a launcher. Can be destroyed or dodged.  
    * Player Interaction: The player can either dodge or use a power-up to destroy it in mid-air.  
-   * Looks: A cylindrical drone with a glowing blue targeting sensor in the front and jet-powered exhausts in the back, leaving a trail of blue light.  
+   * Looks: A cylindrical drone with a light blue targeting sensor in the front and jet-powered exhausts in the back.  
 7. **Drone Operator**  
    * Mario Bros Equivalent: Lakitu  
    * Behavior: Flies overhead, dropping electro-bombs or electric kunai onto the player.  
    * Player Interaction: The player must dodge the bombs and can defeat the enemy by destroying its hoverboard or with a ranged attack.  
-   * Looks: A cyberpunk ninja on a hoverboard, wearing a glowing suit with a helmet that displays holographic targeting data.  
+   * Looks: A cyberpunk ninja on a hoverboard, wearing a  suit with a helmet that displays holographic targeting data.  
 8. **Shock-Spike**  
    * Mario Bros Equivalent: Spiny  
    * Behavior: Crawls along the ground with electrified spikes, damaging the player on contact.  
    * Player Interaction: The player cannot jump on it, but can use projectiles or certain abilities to defeat it.  
-   * Looks: A robotic creature with rotating, glowing spikes that pulse with electricity, with glowing blue circuits on its body.  
-9. **CrushBot**  
-   * Mario Bros Equivalent: Thwomp  
-   * Behavior: Drops down when the player approaches, attempting to crush them.  
-   * Player Interaction: The player must time their movement to avoid being crushed and can pass once the enemy retracts back into the ceiling.  
-   * Looks: A massive, piston-like robot with flashing red lights and a metal block-like body. Electric sparks emit from it just before it drops.
+   * Looks: A robotic creature with, eletric spikes, with circuits on its body.  
 
 ## **Power-ups**
 
