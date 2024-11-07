@@ -287,7 +287,9 @@ The Fireball class represents a projectile fired by the player character, typica
 * Cross-browser testing  
 * User acceptance testing
 
-# File for reference: const canvas \= document.getElementById('gameCanvas');
+# File for reference:
+
+const canvas \= document.getElementById('gameCanvas');
 
 const ctx \= canvas.getContext('2d');
 
