@@ -1,4 +1,4 @@
-# GameManager
+# GameManager: P0
 ## Variables
 level: int - Tracks the current level.
 isGameOver: boolean - Indicates if the game is over.
@@ -14,7 +14,7 @@ endLevel(): sets isGameOver to true
 checkCollisions(): Detects and handles collisions between the player, enemies, platforms, power-ups, and other elements.
 tickGamePlay(): calls player actions, calls update() on the player, enemies, and map elements to refresh game state
 
-# Player
+# Player: P0
 ## Variables
 position: point- Current position of the player on the canvas.
 width, height: int - Dimensions of the player hitbox.
@@ -41,7 +41,7 @@ updateScore(): updates player score
 activatePowerUp(powerUp): Activates a power-up effect and modifies state or attributes.
 update(): Updates player position, applies gravity, and checks ground state.
 
-# Enemy
+# Enemy: P1
 The Enemy class is a base class for all enemy types.
 ## Variables
 position: point - Position of the enemy on the canvas.
@@ -62,7 +62,7 @@ takeDamage(): Updates health or destroys the enemy.
 checkPlayerCollision(player): Determines if there’s a collision with the player and initiates the interaction.
 update(): Updates enemy behavior and position based on specific enemy type logic.
 
-# PowerUp
+# PowerUp: P2
 The PowerUp class represents collectable power-ups that affect the player.
 ## Variables
 x, y: double - Position of the power-up on the canvas.
@@ -75,7 +75,7 @@ removeEffect(player) : Reverts the player’s state to normal
 update(): Updates position if the power-up moves
 checkCollision(player): Detects collision with player and calls applyEffect() if detected.
 
-# Projectile
+# Projectile: P2
 Handles projectiles like fireballs and kunai that the player or enemies fire.
 ## Variables
 x, y: double - Initial position.
@@ -91,7 +91,7 @@ applyPowerUpEffect(player, powerUp) : calls powerUp’s applyEffect(player)
 render(): Draws the projectile on the canvas.
 update(): Moves the projectile and checks for collisions.
 
-# Map
+# Map: P0
 The Map class holds the level layout, obstacles, platforms, and boundaries
 ## Variables
 layout: 2D array - defining terrain, walls, and obstacles.
@@ -105,8 +105,10 @@ render(): Draws the map elements.
 update(): Updates dynamic elements in the map.
 checkBoundaryCollision(entity): Detects if an entity hits the boundaries.
 
-# Objects:
+# Objects: P0
 ## Point 
 ## EnvironmentObject
 ## Box
 
+library that might be helpful to use: melonJS
+figma: https://www.figma.com/board/OnhIOHknIWMbRQF3eApGp0/Matthew's-Figma?node-id=0-1&t=k7YXhvjKD0NTGo84-1
