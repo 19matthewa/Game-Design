@@ -1,4 +1,6 @@
 # MVP Implementation Plan
+    make game over
+    add death
 
 ## Day 1-2 (Core Framework)
     # Objects: P0
