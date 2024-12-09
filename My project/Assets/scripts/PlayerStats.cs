@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerStats : MonoBehaviour
 {
@@ -9,6 +11,16 @@ public class PlayerStats : MonoBehaviour
 
     public GameObject armorModel; // Reference to the armor model
 
+    public Text levelFailText;
+
+    void Start()
+    {
+        // Ensure the level complete text is initially hidden
+        if (levelFailText != null)
+        {
+            levelFailText.gameObject.SetActive(false);
+        }
+    }
     void Update()
     {
         if (hasArmor)
@@ -33,10 +45,8 @@ public class PlayerStats : MonoBehaviour
         {
             // No armor, player loses a life
             lives--;
-            if (lives <= 0)
-            {
-                Die(); // Handle player death (you can add your death logic here)
-            }
+            Debug.Log("Level Failed!");
+            levelFailText.gameObject.SetActive(true);
         }
     }
 

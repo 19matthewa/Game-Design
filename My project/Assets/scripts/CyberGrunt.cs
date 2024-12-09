@@ -47,7 +47,7 @@ public class GoombaMovement : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("Player") && !(transform.position.y < collision.transform.position.y))
+        if (collision.gameObject.CompareTag("Player") && !(transform.position.y+1 < collision.transform.position.y))
         {
             // Get the PlayerStats component from the player
             PlayerStats playerStats = collision.gameObject.GetComponent<PlayerStats>();
