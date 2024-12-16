@@ -7,4 +7,4 @@ If further developed, the game will include complex levels, power-ups, and enemi
 ![Picking up coins, demonstrating shield power-up, and defeating an enemy](gif1.gif)
 
 ### Example #2: Reaching the end of the level
-![Reaching the end of the level](gif2.gif)
+![Reaching the end of the level](Gif2.gif)
