@@ -1,11 +1,10 @@
-# Game-Design
-Play a MVP of a platformer video game similar to Mario
-If further developed, there will be complex levels, powerups, and enemies
+# Game Design
 
-Example #1
-Picking up coins, demostrating shield powerup, and killing enemy
-![Alt Text](gif1.gif)
+Play an MVP of a platformer video game similar to Mario.  
+If further developed, the game will include complex levels, power-ups, and enemies.
 
-Example #2
-reaching end of level
-![Alt Text](Gif2.gif)
+### Example #1: Picking up coins, demonstrating shield power-up, and defeating an enemy
+![Picking up coins, demonstrating shield power-up, and defeating an enemy](gif1.gif)
+
+### Example #2: Reaching the end of the level
+![Reaching the end of the level](gif2.gif)
